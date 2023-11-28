@@ -8,7 +8,8 @@ body {
 }
 
 .img-responsive {
-  width: 50%;
+  width: 100%;
+  display: block;
 }
 
 .grid {
@@ -45,6 +46,10 @@ body {
   padding: 0 30px 20px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .btn {
   display: block;
   color: white;
@@ -57,6 +62,11 @@ body {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 section {
@@ -227,5 +237,12 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
